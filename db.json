@@ -1,0 +1,240 @@
+{
+  "best-products": [
+    {
+      "id": "1",
+      "kode": "k-01",
+      "nama": "Outerware - Keluni Ribbon",
+      "harga": 75000,
+      "is_ready": true,
+      "gambar": "Fashion-1.jpeg"
+    },
+    {
+      "id": "2",
+      "kode": "k-02",
+      "nama": "Skirt - Callula",
+      "harga": 70000,
+      "is_ready": true,
+      "gambar": "Fashion-2.jpeg"
+    },
+    {
+      "id": "3",
+      "kode": "k-03",
+      "nama": "Knitware - Levy Cardi",
+      "harga": 60000,
+      "is_ready": true,
+      "gambar": "Fashion-3.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "kode": "k-01",
+      "nama": "Outerware - Keluni Ribbon",
+      "harga": 95000,
+      "is_ready": true,
+      "gambar": "Fashion-1.jpeg"
+    },
+    {
+      "id": "2",
+      "kode": "k-02",
+      "nama": "Skirt - Callula",
+      "harga": 115000,
+      "is_ready": true,
+      "gambar": "Fashion-2.jpeg"
+    },
+    {
+      "id": "3",
+      "kode": "k-03",
+      "nama": "Knitware - Levy Cardi",
+      "harga": 110000,
+      "is_ready": true,
+      "gambar": "Fashion-3.jpeg"
+    },
+    {
+      "id": "4",
+      "kode": "k-04",
+      "nama": "Pants - Livy Culotte",
+      "harga": 125000,
+      "is_ready": true,
+      "gambar": "Fashion-4.jpeg"
+    },
+    {
+      "id": "5",
+      "kode": "k-05",
+      "nama": "Sweater - Bizeva Knit",
+      "harga": 99000,
+      "is_ready": true,
+      "gambar": "Fashion-5.jpeg"
+    },
+    {
+      "id": "6",
+      "kode": "k-06",
+      "nama": "Vest - Clover Knit",
+      "harga": 70000,
+      "is_ready": true,
+      "gambar": "Fashion-6.jpeg"
+    },
+    {
+      "id": "7",
+      "kode": "k-07",
+      "nama": "Pants - Straight",
+      "harga": 110000,
+      "is_ready": true,
+      "gambar": "Fashion-7.jpeg"
+    },
+    {
+      "id": "8",
+      "kode": "k-08",
+      "nama": "Knit Sweater - Heather",
+      "harga": 95000,
+      "is_ready": true,
+      "gambar": "Fashion-8.jpeg"
+    },
+    {
+      "id": "9",
+      "kode": "k-09",
+      "nama": "Jeans - Zya Baggy Jeans",
+      "harga": 120000,
+      "is_ready": true,
+      "gambar": "Fashion-9.jpeg"
+    }
+  ],
+  "keranjang": [
+    {
+      "id": "c126",
+      "jumlah_pemesanan": "2",
+      "size": "L",
+      "product": {
+        "id": "1",
+        "kode": "k-01",
+        "nama": "Outerware - Keluni Ribbon",
+        "harga": 95000,
+        "is_ready": true,
+        "gambar": "Fashion-1.jpeg"
+      },
+      "keterangan": "Size: XL"
+    }
+  ],
+  "pesanan": [
+    {
+      "id": "9995",
+      "nama": "e",
+      "alamat": "d",
+      "item": []
+    },
+    {
+      "id": "7af0",
+      "nama": "y",
+      "alamat": "g",
+      "item": []
+    },
+    {
+      "id": "f933",
+      "nama": "Hikmah",
+      "alamat": "Cimincrang",
+      "item": [
+        {
+          "id": "854d",
+          "jumlah_pemesanan": "2",
+          "keterangan": "TELOLET",
+          "product": {
+            "id": "2",
+            "kode": "k-02",
+            "nama": "Skirt - Callula",
+            "harga": 115000,
+            "is_ready": true,
+            "gambar": "Fashion-2.jpeg"
+          }
+        },
+        {
+          "id": "08ca",
+          "jumlah_pemesanan": "2",
+          "keterangan": "XL",
+          "product": {
+            "id": "2",
+            "kode": "k-02",
+            "nama": "Skirt - Callula",
+            "harga": 115000,
+            "is_ready": true,
+            "gambar": "Fashion-2.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b910",
+      "nama": "HIMAHZZZ",
+      "alamat": "Jln. Fauziah",
+      "item": [
+        {
+          "id": "06d8",
+          "jumlah_pemesanan": "2",
+          "keterangan": "XL",
+          "product": {
+            "id": "2",
+            "kode": "k-02",
+            "nama": "Skirt - Callula",
+            "harga": 115000,
+            "is_ready": true,
+            "gambar": "Fashion-2.jpeg"
+          }
+        },
+        {
+          "id": "c2da",
+          "jumlah_pemesanan": "1",
+          "keterangan": "M",
+          "product": {
+            "id": "1",
+            "kode": "k-01",
+            "nama": "Outerware - Keluni Ribbon",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "Fashion-1.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f0d3",
+      "nama": "e",
+      "alamat": "a",
+      "item": [
+        {
+          "id": "4408",
+          "jumlah_pemesanan": "2",
+          "size": "L",
+          "product": {
+            "id": "1",
+            "kode": "k-01",
+            "nama": "Outerware - Keluni Ribbon",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "Fashion-1.jpeg"
+          },
+          "keterangan": "Size: L"
+        }
+      ]
+    },
+    {
+      "id": "5e46",
+      "nama": "Hikmah",
+      "alamat": "CIhanjuang",
+      "item": [
+        {
+          "id": "7335",
+          "jumlah_pemesanan": "2",
+          "size": "S",
+          "product": {
+            "id": "1",
+            "kode": "k-01",
+            "nama": "Outerware - Keluni Ribbon",
+            "harga": 95000,
+            "is_ready": true,
+            "gambar": "Fashion-1.jpeg"
+          },
+          "keterangan": "Size: S"
+        }
+      ]
+    }
+  ]
+}
