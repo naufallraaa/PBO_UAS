@@ -68,7 +68,54 @@
           <form @submit.prevent="simpanEdit">
             <div class="form-group">
               <label for="jumlah_pemesanan">Jumlah Pemesanan:</label>
-              <input type="number" class="form-control" v-model="itemDiedit.jumlah_pemesanan" />
+              <input type="number" class="form-control" v-model="itemDiedit.jumlah_pemesanan" min="1" />
+            </div>
+            <div class="form-group">
+              <label for="size">Size:</label>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sizeOptions"
+                  id="sizeS"
+                  value="S"
+                  v-model="itemDiedit.keterangan"
+                />
+                <label class="form-check-label" for="sizeS">S</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sizeOptions"
+                  id="sizeM"
+                  value="M"
+                  v-model="itemDiedit.keterangan"
+                />
+                <label class="form-check-label" for="sizeM">M</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sizeOptions"
+                  id="sizeL"
+                  value="L"
+                  v-model="itemDiedit.keterangan"
+                />
+                <label class="form-check-label" for="sizeL">L</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sizeOptions"
+                  id="sizeXL"
+                  value="XL"
+                  v-model="itemDiedit.keterangan"
+                />
+                <label class="form-check-label" for="sizeXL">XL</label>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
             <button type="button" class="btn btn-secondary" @click="itemDiedit = null">Batal</button>
@@ -151,6 +198,17 @@ export default {
       this.itemDiedit = { ...item };
     },
     simpanEdit() {
+      if (this.itemDiedit.jumlah_pemesanan < 1) {
+        this.$toast.open({
+          message: "Jumlah Pemesanan Tidak Boleh Kurang dari 1",
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+        return;
+      }
+
       axios.put(`http://localhost:3000/keranjang/${this.itemDiedit.id}`, this.itemDiedit)
         .then(() => {
           this.fetchData();
@@ -167,6 +225,17 @@ export default {
         });
     },
     checkout() {
+      if (this.keranjang.length === 0) {
+        this.$toast.open({
+          message: "Keranjang Kosong, Tidak Bisa Melakukan Checkout",
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+        return;
+      }
+
       if (this.pesan.nama && this.pesan.alamat) {
         this.pesan.item = this.keranjang;
         axios
@@ -210,7 +279,3 @@ export default {
   },
 };
 </script>
-
-<style>
-/* Add any custom styles here */
-</style>
